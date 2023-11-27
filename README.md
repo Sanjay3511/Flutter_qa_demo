@@ -1,16 +1,18 @@
+
+[//]: # ( Written By Sanjay)
+
 # high_level_test
 
-ASsessment
+Assessment
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a starting point for a Flutter application and automation testing.
+## Steps to Run Tests
 
-A few resources to get you started if this is your first Flutter project:
+1. Edit Configuration and add target File:
+high_level_test/test_driver/high_level_app.dart
+2. Once you start application copy Websocket URL from console:
+  looks like Debug Service Listening on  "webSocketUrl=ws://127.0.0.1:46353/81eLlA_Ueuc=/ws" and paste in base_test.dart file
+3. Run the tests from dir test_driver/flow_test.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

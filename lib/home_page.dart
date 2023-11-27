@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:high_level_test/constants/widget_keys.dart';
 import 'favorites_page.dart';
 import 'generator_page.dart';
 
@@ -34,11 +35,11 @@ class _MyHomePageState  extends State<MyHomePage>{
                   child: NavigationRail(
                 extended: constraints.maxWidth >=600,
                 destinations: [ NavigationRailDestination(
-                    icon: Icon(Icons.home),
+                    icon: Icon(Icons.home,key: ValueKey(homeBtn),),
                     label: Text('Home'),
                 ),
                   NavigationRailDestination(
-                      icon: Icon(Icons.favorite),
+                      icon: Icon(Icons.favorite,key: ValueKey(favouriteBtn),),
                       label: Text('Favorites'),
                   ),
               ],

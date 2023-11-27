@@ -5,9 +5,9 @@ class BaseTest {
   FlutterDriver? driver;
 
   Future setUp() async{
-    String emulator = "ws://127.0.0.1:34323/zgjfrl_m2Vc=/ws";
+    String webSocketUrl = "http://127.0.0.1:37219/8dW9uS0fQNo=/";
     driver ??= await FlutterDriver.connect(
-      dartVmServiceUrl: emulator
+      dartVmServiceUrl: webSocketUrl
     );
   }
   Future tearDown() async{

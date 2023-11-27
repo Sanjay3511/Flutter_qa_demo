@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:high_level_test/constants/widget_keys.dart';
 import 'package:high_level_test/my_app.dart';
 import 'package:provider/provider.dart';
 
@@ -9,19 +10,20 @@ class FavoritesPage extends StatelessWidget{
     var appState = context.watch<MyAppState>();
     if (appState.favorites.isEmpty) {
       return Center(
-        child: Text('No favorites yet.'),
+        child: Text('No favorites yet.',key: ValueKey(noFavYet),),
       );
     }
     return ListView(
       children: [
         Padding(
           padding: const EdgeInsets.all(20),
-          child: Text('You have ${appState.favorites.length} favorites: '),
+          child: Text('Count=${appState.favorites.length}',
+            key:ValueKey(favCount) ,),
         ),
         for(var pair in appState.favorites)
           ListTile(
             leading: Icon(Icons.favorite),
-            title: Text(pair.asLowerCase,key: ValueKey(ge),),
+            title: Text(pair.asLowerCase,key: ValueKey('${pair.asLowerCase}'),),
 
           ),
       ],

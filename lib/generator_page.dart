@@ -2,6 +2,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:high_level_test/constants/widget_keys.dart';
 import 'package:provider/provider.dart';
 
 import 'big_card.dart';
@@ -36,7 +37,7 @@ class GeneratorPage extends StatelessWidget {
                   appState.toggleFavorite();
                 },
                 icon: Icon(iconData),
-                label: Text('Like',key: ValueKey("Like")),
+                label: Text('Like',key: ValueKey(likeBtn)),
 
               ),
               SizedBox(width: 10),
@@ -44,7 +45,7 @@ class GeneratorPage extends StatelessWidget {
                 onPressed: () {
                   appState.getNext();
                 },
-                child: Text('Next'),
+                child: Text('Next',key: ValueKey(nextBtn),),
               ),
             ],
           ),
