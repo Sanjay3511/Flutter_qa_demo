@@ -3,7 +3,7 @@
 
 # high_level_test
 
-Assessment
+Assignment
 
 ## Getting Started
 
