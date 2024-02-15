@@ -1,13 +1,13 @@
 
 [//]: # ( Written By Sanjay)
 
-# high_level_test
+# Flutter QA Automation 
 
-Assignment
+Intergration testing using flutter driver
 
 ## Getting Started
 
-This project is a starting point for a Flutter application and automation testing.
+This project is a starting point for a Flutter application using flutter driver for  automation testing.
 ## Steps to Run Tests
 
 1. Edit Configuration and add target File:
